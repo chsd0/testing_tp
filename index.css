@@ -1,0 +1,125 @@
+@font-face {
+    font-family: logo;
+    src: url(fonts/Comfortaa.ttf);
+}
+
+@font-face {
+    font-family: regular;
+    src: url(fonts/Inter-Regular.otf);
+}
+
+@font-face {
+    font-family: medium;
+    src: url(fonts/Inter-Medium.otf);
+}
+
+@font-face {
+    font-family: bold;
+    src: url(fonts/Inter-Bold.otf);
+}
+
+
+body {
+    margin: 0;
+    background-color: rgb(0, 0, 0, 0.05);
+}
+
+
+.logo {
+    font-family: 'logo';
+    font-size:36px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+
+header {
+    align-content: center;
+    height:86px;
+    background-color: white;
+    box-shadow: 0px 3px 4px rgb(0, 0, 0, 0.25);
+}
+
+.enter {
+    font-family: medium;
+    font-size: 16px;
+    height: 45px;
+    width: 95px;
+    background-color: white;
+    border-radius: 10px;
+    color: #3a3a3a;
+    border: 2px solid #3a3a3a;
+    margin-left: 640px;   
+    transition: background-color 0.5s ease,
+                border 0.5s ease,
+                color 0.5s ease;
+}
+
+.enter:hover {
+    background-color: #809CFF;
+    border:2px solid #809CFF;
+    color: white;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    height: 288px;
+    width: 200px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    font-family: regular;
+    box-shadow: 0px 1px 4px rgb(0, 0, 0, 0.25);
+    transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0px 5px 5px rgb(0, 0, 0, 0.25);
+}
+
+.card_img {
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
+}
+
+.card_details {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    font-size: 16px;
+    margin: 10px;
+}
+
+.price {
+    font-size: 24px;
+    margin: 10px;
+}
+
+.like {
+    width: 30px;
+    height: 30px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    background-color: #e5e5e5;
+    /* box-shadow: 0px -1px 1px rgb(0, 0, 0, 0.5); */
+    font-family: logo;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
